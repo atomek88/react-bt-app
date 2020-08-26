@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import { useBluetoothStatus } from 'react-native-bluetooth-status';
 import styles from './styles';
 
 function BTStatus() {

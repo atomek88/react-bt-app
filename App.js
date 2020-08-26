@@ -8,7 +8,7 @@
 
 import React from 'react';
 import { Provider as StateProvider } from 'react-redux';
-
+import { BleManager, BleError } from 'react-native-ble-plx';
 import {
   SafeAreaView,
   ScrollView,
@@ -27,6 +27,8 @@ import {
 
 import MainStackNavigator from './src/navigation/AppNavigator';
 import store from './src/redux/store';
+
+const DeviceManager = new BleManager();
 
 export default function App() {
   return (
